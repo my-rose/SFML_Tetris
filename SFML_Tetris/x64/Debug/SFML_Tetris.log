@@ -1,0 +1,2 @@
+﻿  main.cpp
+C:\Soft\SFML-2.5.1\include\SFML\Graphics.hpp(32,10): fatal error C1083: Не удается открыть файл включение: SFML/Window.hpp: No such file or directory,

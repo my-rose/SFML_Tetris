@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "72405aeb-baf4-448f-b34a-e9fc20c30689": {
+      "ProjectGuid": "72405aeb-baf4-448f-b34a-e9fc20c30689",
+      "DisplayName": "SFML_Tetris",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
