@@ -4,27 +4,25 @@ using namespace sf;
 
 int main()
 {
-	// Объект, который, собственно, является главным окном приложения
-	RenderWindow window(VideoMode(200, 200), "SFML Works!");
+	RenderWindow window(VideoMode(320, 480), "Tetris?");
 
-	// Главный цикл приложения. Выполняется, пока открыто окно
+	Texture texture;
+	texture.loadFromFile("C:\\Users\\Леночка\\source\\repos\\SFML_Tetris\\images\\tiles.png");
+
+	Sprite sprite(texture);
+
 	while (window.isOpen())
 	{
-		// Обрабатываем очередь событий в цикле
 		Event event;
 		while (window.pollEvent(event))
 		{
-			// Пользователь нажал на «крестик» и хочет закрыть окно?
 			if (event.type == Event::Closed)
-				// тогда закрываем его
 				window.close();
 		}
-		// Задаем цвет фона
-		window.clear(Color(250, 220, 100, 0));
+		window.clear(Color::White);
 
-		// Отрисовка окна	
+		window.draw(sprite);
+
 		window.display();
 	}
-
-	return 0;
 }
